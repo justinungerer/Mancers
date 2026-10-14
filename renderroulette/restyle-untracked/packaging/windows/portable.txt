@@ -1,0 +1,10 @@
+EffectCraft portable mode
+
+While this file sits next to effectcraft.exe, EffectCraft keeps its settings, log files, downloaded
+models and its disk cache in the EffectCraftData folder beside it, and writes nothing to %APPDATA%
+or %LOCALAPPDATA%. Copy the whole folder to move EffectCraft with its settings.
+
+Delete this file to use the normal per-user folders (%APPDATA%\EffectCraft and
+%LOCALAPPDATA%\EffectCraft) instead. If EffectCraftData can't be written (for example on a read-only
+drive), EffectCraft logs a warning and uses the per-user folders instead. The EFFECTCRAFT_CONFIG_DIR
+environment variable, when set, still chooses the settings folder.

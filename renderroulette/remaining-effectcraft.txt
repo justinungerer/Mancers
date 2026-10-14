@@ -1,0 +1,141 @@
+﻿Remaining 'effect.?craft' occurrences in EffectTool after the RenderRoulette rename
+Generated 2026-10-09 18:51 by remaining.ps1 (rg -i 'effect.?craft', text files).
+Text total: 143 occurrences on 121 lines in 59 files.
+
+Binary / non-text (not counted above, kept on purpose):
+  crates/model/tests/fixtures/quad.glb - glTF generator string "EffectCraft fixture script"; editing it would break the GLB chunk lengths.
+  packaging/macos/dmg/dmg-layout.DS_Store - binary Finder layout (protected).
+  packaging/macos/dmg/background.svg - the title is outlined glyph paths spelling "EffectCraft" (no text to replace; recoloured to coral).
+  docs/images/renderroulette-*.png - upstream screenshots showing the old EffectCraft UI (renamed with their sidecars, not re-shot).
+
+== Upstream links (GitHub repo/issues/raw/star-history, getartcraft.com page) : 49 occurrences, 36 lines
+  Cargo.toml:11:repository = "https://github.com/storytold/effectcraft"
+  CLAUDE.md:22:- **Community links** (Help menu, About, header Discord button): https://discord.gg/artcraft, https://getartcraft.com, https://getartcraft.com/apps/effectcraft, https://github.com/storytold/effectcraft.
+  contributors\contributors.json:3:  "repo": "storytold/effectcraft",
+  NOTICE:4:RenderRoulette is a modified version of EffectCraft (https://github.com/storytold/effectcraft).
+  apps\renderroulette\src\main.rs:257:        "RenderRoulette couldn't start its window: {e}\n\n{next}Updating the graphics driver often helps. If it keeps happening, please report it at https://github.com/storytold/effectcraft/issues with this message."
+  README.md:24:  RenderRoulette is a modified version of <a href="https://github.com/storytold/effectcraft">EffectCraft</a>
+  README.md:40:  <a href="https://getartcraft.com/apps/effectcraft"><b>Upstream EffectCraft on getartcraft.com</b></a> ┬╖
+  README.md:191:Installers for each version are on the [Releases](https://github.com/storytold/effectcraft/releases)
+  README.md:212:git clone https://github.com/storytold/effectcraft
+  README.md:242:[Bug reports](https://github.com/storytold/effectcraft/issues) are the most useful thing you can
+  README.md:258:**New to RenderRoulette?** It isn't published on getartcraft.com; build it from this repository (see [Get started](#get-started)) or use the installers below. The upstream app it derives from is on the [EffectCraft page on getartcraft.com](https://getartcraft.com/apps/effectcraft).
+  README.md:260:**Want a specific build or format?** On GitHub, the [latest release](https://github.com/storytold/effectcraft/releases/latest) has every build listed below, and [all releases](https://github.com/storytold/effectcraft/releases) has earlier versions and their notes. `<ver>` in the file names is the version number, and `SHA256SUMS.txt` lists a checksum for every file.
+  README.md:325:| <img src="https://raw.githubusercontent.com/storytold/effectcraft/main/assets/app-icon/hicolor/64x64/apps/ai.storyteller.effectcraft.png" alt="" width="32" height="32"> | **EffectCraft** | **Motion graphics and visual effects ┬╖ the upstream of RenderRoulette** | [GitHub](https://github.com/storytold/effectcraft) | [Website](https://getartcraft.com/apps/effectcraft) |
+  README.md:349:  <a href="https://getartcraft.com/apps/effectcraft">EffectCraft (upstream)</a>
+  README.md:374:[![Star History Chart](https://api.star-history.com/svg?repos=storytold/effectcraft&type=Date&legend=top-left)](https://www.star-history.com/?repos=storytold%2Feffectcraft&type=date&legend=top-left)
+  packaging\windows\sign.ps1:58:$common = @('sign', '/v', '/fd', 'SHA256', '/td', 'SHA256', '/d', 'RenderRoulette', '/du', 'https://github.com/storytold/effectcraft')
+  packaging\windows\renderroulette.wxs:29:    <Property Id="ARPURLINFOABOUT" Value="https://getartcraft.com/apps/effectcraft" />
+  packaging\windows\renderroulette.wxs:30:    <Property Id="ARPURLUPDATEINFO" Value="https://getartcraft.com/apps/effectcraft" />
+  packaging\windows\renderroulette-user.wxs:27:    <Property Id="ARPURLINFOABOUT" Value="https://getartcraft.com/apps/effectcraft" />
+  packaging\windows\renderroulette-user.wxs:28:    <Property Id="ARPURLUPDATEINFO" Value="https://getartcraft.com/apps/effectcraft" />
+  docs\gaps.md:74:- Regression evidence for [#66](https://github.com/storytold/effectcraft/issues/66): scripted
+  docs\gaps.md:78:- Regression evidence for [#67](https://github.com/storytold/effectcraft/issues/67): scripted
+  docs\gaps.md:111:- Regression evidence for the interface items of [#227](https://github.com/storytold/effectcraft/issues/227),
+  docs\gaps.md:118:  [#227](https://github.com/storytold/effectcraft/issues/227), checked headlessly on Windows:
+  packaging\linux\ai.storyteller.renderroulette.metainfo.xml.in:23:  <url type="homepage">https://getartcraft.com/apps/effectcraft</url>
+  packaging\linux\ai.storyteller.renderroulette.metainfo.xml.in:24:  <url type="bugtracker">https://github.com/storytold/effectcraft/issues</url>
+  packaging\linux\ai.storyteller.renderroulette.metainfo.xml.in:25:  <url type="help">https://github.com/storytold/effectcraft</url>
+  packaging\linux\ai.storyteller.renderroulette.metainfo.xml.in:41:      <image>https://raw.githubusercontent.com/storytold/effectcraft/main/docs/images/effectcraft-demo.jpg</image>
+  packaging\linux\package.sh:124:  REPO="${GITHUB_REPOSITORY:-storytold/effectcraft}"
+  packaging\linux\nfpm.yaml:17:homepage: https://getartcraft.com/apps/effectcraft
+  docs\agents.md:157:  ([#257](https://github.com/storytold/effectcraft/issues/257)).
+  docs\agents.md:170:  ([#261](https://github.com/storytold/effectcraft/issues/261)).
+  crates\engine\src\tests.rs:334:    assert_eq!(s.execute("help.github", json!({})).unwrap()["url"], "https://github.com/storytold/effectcraft");
+  crates\engine\src\links.rs:8:pub const APP_PAGE: &str = "https://getartcraft.com/apps/effectcraft";
+  crates\engine\src\links.rs:9:pub const GITHUB: &str = "https://github.com/storytold/effectcraft";
+  crates\engine\src\links.rs:10:pub const ISSUES: &str = "https://github.com/storytold/effectcraft/issues";
+
+== ArtCraft brand terms (marks licensed only in the context of upstream EffectCraft) : 27 occurrences, 18 lines
+  AGENTS.md:92:   EffectCraft under `docs/brand/LICENSE-brand.txt` (forks and modified versions must remove them). The
+  AGENTS.md:93:   marks are licensed to the upstream EffectCraft project, not to RenderRoulette; this checkout still
+  ATTRIBUTION.md:106:covered by the project licence; they may be used only unmodified and only as part of this repository and EffectCraft,
+  README.md:362:part of this repository and EffectCraft, under [`docs/brand/LICENSE-brand.txt`](docs/brand/LICENSE-brand.txt).
+  docs\brand\LICENSE-brand.txt:5:and are NOT open source. They are not covered by EffectCraft's MIT OR Apache-2.0 license, and nothing in
+  docs\brand\LICENSE-brand.txt:14:  2. within EffectCraft itself, its documentation and its official builds, to identify EffectCraft as made
+  docs\brand\LICENSE-brand.txt:24:  - They are used only in the context of EffectCraft, and only to say that the ArtCraft team makes it.
+  docs\brand\LICENSE-brand.txt:28:    handle, app-store listing, advertising or marketing of anything other than EffectCraft.
+  docs\brand\LICENSE-brand.txt:32:If you distribute or publish a modified version of EffectCraft, or any work derived from it, you must
+  docs\brand\LICENSE-brand.txt:34:present it as an ArtCraft product. You may say, in plain text, that your work is based on EffectCraft by
+  docs\brand\artcraft-mark.svg.attribution:5:license:      LicenseRef-ArtCraft-Trademark ΓÇö ArtCraft name, wordmark and logos are trademarks of the ArtCraft Team, not open source and not covered by EffectCraft's MIT OR Apache-2.0 license; usable only unmodified and only in the context of EffectCraft, under docs/brand/LICENSE-brand.txt.
+  docs\brand\artcraft-mark.png.attribution:5:license:      LicenseRef-ArtCraft-Trademark ΓÇö ArtCraft name, wordmark and logos are trademarks of the ArtCraft Team, not open source and not covered by EffectCraft's MIT OR Apache-2.0 license; usable only unmodified and only in the context of EffectCraft, under docs/brand/LICENSE-brand.txt.
+  docs\brand\artcraft-mark-black.svg.attribution:5:license:      LicenseRef-ArtCraft-Trademark ΓÇö ArtCraft name, wordmark and logos are trademarks of the ArtCraft Team, not open source and not covered by EffectCraft's MIT OR Apache-2.0 license; usable only unmodified and only in the context of EffectCraft, under docs/brand/LICENSE-brand.txt.
+  docs\brand\artcraft-mark-black.png.attribution:5:license:      LicenseRef-ArtCraft-Trademark ΓÇö ArtCraft name, wordmark and logos are trademarks of the ArtCraft Team, not open source and not covered by EffectCraft's MIT OR Apache-2.0 license; usable only unmodified and only in the context of EffectCraft, under docs/brand/LICENSE-brand.txt.
+  docs\brand\artcraft-logo.svg.attribution:5:license:      LicenseRef-ArtCraft-Trademark ΓÇö ArtCraft name, wordmark and logos are trademarks of the ArtCraft Team, not open source and not covered by EffectCraft's MIT OR Apache-2.0 license; usable only unmodified and only in the context of EffectCraft, under docs/brand/LICENSE-brand.txt.
+  docs\brand\artcraft-logo.png.attribution:5:license:      LicenseRef-ArtCraft-Trademark ΓÇö ArtCraft name, wordmark and logos are trademarks of the ArtCraft Team, not open source and not covered by EffectCraft's MIT OR Apache-2.0 license; usable only unmodified and only in the context of EffectCraft, under docs/brand/LICENSE-brand.txt.
+  docs\brand\artcraft-logo-white.svg.attribution:5:license:      LicenseRef-ArtCraft-Trademark ΓÇö ArtCraft name, wordmark and logos are trademarks of the ArtCraft Team, not open source and not covered by EffectCraft's MIT OR Apache-2.0 license; usable only unmodified and only in the context of EffectCraft, under docs/brand/LICENSE-brand.txt.
+  docs\brand\artcraft-logo-white.png.attribution:5:license:      LicenseRef-ArtCraft-Trademark ΓÇö ArtCraft name, wordmark and logos are trademarks of the ArtCraft Team, not open source and not covered by EffectCraft's MIT OR Apache-2.0 license; usable only unmodified and only in the context of EffectCraft, under docs/brand/LICENSE-brand.txt.
+
+== Copyright holders / authorship of upstream work ("EffectCraft contributors") : 49 occurrences, 49 lines
+  ATTRIBUTION.md:36:| `crates/lottie/tests/fixtures/bouncing-ball.json` | EffectCraft contributors | Original work: hand-written Lottie test fixture (bouncing ball, eased position keys) | MIT OR Apache-2.0 |
+  ATTRIBUTION.md:37:| `crates/lottie/tests/fixtures/shapes-gradient.json` | EffectCraft contributors | Original work: hand-written Lottie test fixture (star, rectangle, gradient fill, dashed stroke, trim paths) | MIT OR Apache-2.0 |
+  ATTRIBUTION.md:38:| `crates/lottie/tests/fixtures/precomp-matte-text.json` | EffectCraft contributors | Original work: hand-written Lottie test fixture (precomp, track matte, parented text) | MIT OR Apache-2.0 |
+  ATTRIBUTION.md:39:| `crates/lottie/tests/fixtures/legacy-masks.json` | EffectCraft contributors | Original work: hand-written Lottie test fixture (legacy keyframes, masks) | MIT OR Apache-2.0 |
+  ATTRIBUTION.md:40:| `crates/svg/tests/fixtures/basic-shapes.svg` | EffectCraft contributors | Original work: hand-written SVG test fixture (basic shapes, groups, transforms) | MIT OR Apache-2.0 |
+  ATTRIBUTION.md:41:| `crates/svg/tests/fixtures/paths-gradients.svg` | EffectCraft contributors | Original work: hand-written SVG test fixture (path data, gradients, CSS, use) | MIT OR Apache-2.0 |
+  ATTRIBUTION.md:42:| `crates/model/tests/fixtures/quad.gltf` | EffectCraft contributors | Original work: glTF 2.0 test fixture (textured quad, node hierarchy, translation animation; data URIs) | MIT OR Apache-2.0 |
+  ATTRIBUTION.md:43:| `crates/model/tests/fixtures/quad.glb` | EffectCraft contributors | Original work: binary glTF test fixture (the same quad with its texture in the BIN chunk) | MIT OR Apache-2.0 |
+  ATTRIBUTION.md:44:| `crates/model/tests/fixtures/cube.obj` | EffectCraft contributors | Original work: Wavefront OBJ test fixture (unit cube, two materials) | MIT OR Apache-2.0 |
+  ATTRIBUTION.md:45:| `crates/model/tests/fixtures/cube.mtl` | EffectCraft contributors | Original work: MTL test fixture (materials of cube.obj) | MIT OR Apache-2.0 |
+  ATTRIBUTION.md:53:| `docs/images/renderroulette-hero.png` | EffectCraft contributors | Original work: screenshot of RenderRoulette (RenderRoulette main window) | MIT OR Apache-2.0 |
+  ATTRIBUTION.md:54:| `docs/images/renderroulette-3d.png` | EffectCraft contributors | Original work: screenshot of RenderRoulette (RenderRoulette Classic 3D) | MIT OR Apache-2.0 |
+  ATTRIBUTION.md:55:| `docs/images/renderroulette-graph-editor.png` | EffectCraft contributors | Original work: screenshot of RenderRoulette (RenderRoulette Graph Editor) | MIT OR Apache-2.0 |
+  ATTRIBUTION.md:56:| `docs/images/renderroulette-effects.png` | EffectCraft contributors | Original work: screenshot of RenderRoulette (RenderRoulette effects) | MIT OR Apache-2.0 |
+  ATTRIBUTION.md:57:| `docs/images/renderroulette-render-queue.png` | EffectCraft contributors | Original work: screenshot of RenderRoulette (RenderRoulette Render Queue panel with the demo compositions queued for H.264 and ProRes export) | MIT OR Apache-2.0 |
+  NOTICE:2:Copyright (c) 2026 ArtCraft Team and the EffectCraft contributors.
+  LICENSE-MIT:3:Copyright (c) 2026 ArtCraft Team and the EffectCraft contributors
+  apps\renderroulette\build.rs:18:        .set("LegalCopyright", "Copyright (c) 2026 The EffectCraft contributors. MIT OR Apache-2.0.")
+  README.md:355:Copyright (c) 2026 ArtCraft Team and the EffectCraft contributors. Required notices are in [NOTICE](NOTICE).
+  docs\plugins.md:45:  "author": "EffectCraft contributors",
+  docs\images\renderroulette-render-queue.png.attribution:3:author:       EffectCraft contributors
+  crates\svg\tests\fixtures\paths-gradients.svg.attribution:3:author:       EffectCraft contributors
+  crates\svg\tests\fixtures\paths-gradients.svg.attribution:6:added:        2026-10-02 by EffectCraft contributors (Claude agent, SVG import)
+  docs\images\renderroulette-hero.png.attribution:3:author:       EffectCraft contributors
+  crates\svg\tests\fixtures\basic-shapes.svg.attribution:3:author:       EffectCraft contributors
+  crates\svg\tests\fixtures\basic-shapes.svg.attribution:6:added:        2026-10-02 by EffectCraft contributors (Claude agent, SVG import)
+  crates\model\tests\fixtures\quad.gltf.attribution:3:author:       EffectCraft contributors
+  docs\images\renderroulette-graph-editor.png.attribution:3:author:       EffectCraft contributors
+  crates\model\tests\fixtures\quad.glb.attribution:3:author:       EffectCraft contributors
+  docs\images\renderroulette-effects.png.attribution:3:author:       EffectCraft contributors
+  crates\model\tests\fixtures\cube.obj.attribution:3:author:       EffectCraft contributors
+  crates\model\tests\fixtures\cube.mtl.attribution:3:author:       EffectCraft contributors
+  docs\images\renderroulette-3d.png.attribution:3:author:       EffectCraft contributors
+  examples\plugins\posterize-bands\src\lib.rs:19:  "author": "EffectCraft contributors",
+  crates\lottie\tests\fixtures\shapes-gradient.json.attribution:3:author:       EffectCraft contributors
+  crates\lottie\tests\fixtures\precomp-matte-text.json.attribution:3:author:       EffectCraft contributors
+  crates\lottie\tests\fixtures\legacy-masks.json.attribution:3:author:       EffectCraft contributors
+  crates\lottie\tests\fixtures\bouncing-ball.json.attribution:3:author:       EffectCraft contributors
+  crates\engine\scripts\Rename Layers.jsx.attribution:3:author:       EffectCraft contributors
+  crates\engine\scripts\Rename Layers.jsx.attribution:6:added:        2026-10-03 by EffectCraft contributors (M13.1)
+  crates\engine\presets\text_animators.json.attribution:3:author:       EffectCraft contributors
+  crates\engine\scripts\Create Null at Selected Layers.jsx.attribution:3:author:       EffectCraft contributors
+  crates\engine\scripts\Create Null at Selected Layers.jsx.attribution:6:added:        2026-10-03 by EffectCraft contributors (M13.1)
+  crates\engine\scripts\Sort Layers by In Point.jsx.attribution:3:author:       EffectCraft contributors
+  crates\engine\scripts\Sort Layers by In Point.jsx.attribution:6:added:        2026-10-03 by EffectCraft contributors (M13.1)
+  crates\engine\scripts\Render Queue Batch.jsx.attribution:3:author:       EffectCraft contributors
+  crates\engine\scripts\Render Queue Batch.jsx.attribution:6:added:        2026-10-03 by EffectCraft contributors (M13.1)
+  crates\engine\scripts\ScriptUI Panels\Layer Tools.jsx.attribution:3:author:       EffectCraft contributors
+  crates\engine\scripts\ScriptUI Panels\Layer Tools.jsx.attribution:6:added:        2026-10-03 by EffectCraft contributors (M13.1)
+
+== Read-compatibility with files saved by upstream EffectCraft (preset tag, template format, XML root + tests) : 13 occurrences, 13 lines
+  README.md:26:  Links to GitHub issues, releases and getartcraft.com below point at the upstream EffectCraft project.
+  crates\engine\src\xml_project.rs:20:/// The root element of XML projects saved by upstream EffectCraft, still read.
+  crates\engine\src\xml_project.rs:21:const UPSTREAM_ROOT: &str = "EffectCraftProject";
+  crates\engine\src\xml_project.rs:269:    fn upstream_effectcraft_xml_projects_still_open() {
+  crates\engine\src\tests_menu_cmds.rs:333:    // Presets saved by upstream EffectCraft (its own tag) still apply; other JSON doesn't.
+  crates\engine\src\tests_menu_cmds.rs:337:    std::fs::write(&upstream, saved.replace("\"renderrouletteAnimationPreset\"", "\"effectcraftAnimationPreset\"")).unwrap();
+  crates\engine\src\commands\animation.rs:17:/// The tag of presets saved by upstream EffectCraft, still read.
+  crates\engine\src\commands\animation.rs:18:pub const UPSTREAM_PRESET_TAG: &str = "effectcraftAnimationPreset";
+  crates\engine\src\commands\essential.rs:26:/// The `format` of templates exported by upstream EffectCraft, still read.
+  crates\engine\src\commands\essential.rs:27:pub const UPSTREAM_TEMPLATE_FORMAT: &str = "effectcraft-template";
+  crates\engine\src\tests_essential.rs:237:    // Templates exported by upstream EffectCraft (its own format id) still read.
+  crates\engine\src\tests_essential.rs:241:            let b = if n == "manifest.json" { String::from_utf8_lossy(b).replace("\"renderroulette-template\"", "\"effectcraft-template\"").into_bytes() } else { b.clone() };
+  crates\engine\src\tests_essential.rs:248:    assert_eq!((uinfo["format"].as_str(), uinfo["width"].as_u64()), (Some("effectcraft-template"), Some(64)));
+
+== Intentional references to the upstream project (NOTICE, naming rule, README notes, licence text) : 5 occurrences, 5 lines
+  AGENTS.md:8:The product is **RenderRoulette**, a modified version of EffectCraft. Write it `RenderRoulette` in
+  AGENTS.md:12:`ai.storyteller.renderroulette`. Keep `EffectCraft` only where it names the upstream project: its
+  AGENTS.md:13:GitHub repository, issues and getartcraft.com page, the copyright holders ("the EffectCraft
+  assets\app-icon\LICENSE.txt:5:Original artwork drawn in code for RenderRoulette, a modified version of EffectCraft (no
+  packaging\macos\dmg\README.md:10:| `background.svg` | Source of the background: the app icon (`assets/app-icon/renderroulette.svg`, linked, not copied) cropped as a cover on the RenderRoulette coral field (`#f05a46`), Ink and Paper. Its title is still the upstream outlined "EffectCraft" glyphs (re-outline it with Inter to rebrand). Its text (Inter, JetBrains Mono) is outlined, so rendering it needs no fonts. `package.sh` renders it with [resvg](https://github.com/linebender/resvg) 0.48.1 at 1x (660 ├ù 400 px) and 2x (1320 ├ù 800 px) and joins both into `.background/background.tiff` (`tiffutil -cathidpicheck`); `release.yml` installs that resvg on the macOS runner. |
+

@@ -1,0 +1,24 @@
+﻿Compliance check: RenderRoulette  (2026-10-13 10:56)
+Repo: C:\Users\ELMYZ\OneDrive - Bayer\Documents\AI_temp\EffectTool  (git HEAD = upstream commit 3df56ce)
+
+1. Source tree scan (tracked + untracked, not ignored; text, binary, UTF-16, file names):
+== EffectTool: 3 text lines, 0 binary files, 0 file names
+   LICENSE-MIT:3: Copyright (c) 2026 ArtCraft Team and the EffectCraft contributors
+   NOTICE:2: Copyright (c) 2026 ArtCraft Team and the EffectCraft contributors.
+   vendor/reel/LICENSE-MIT:3: Copyright (c) 2026 The FilmCraft contributors
+
+2. Licence files vs upstream commit (git diff HEAD):
+   LICENSE-MIT : present, byte-identical to upstream
+   LICENSE-APACHE : present, byte-identical to upstream
+
+3. Built outputs scan ('craft', ASCII + UTF-16LE, case-insensitive; zip entries scanned decompressed):
+   MSI: C:\Users\ELMYZ\pc-dist\renderroulette-0.6.0-windows-x64-user.msi (46436352 B); admin-extracted to C:\Users\ELMYZ\AppData\Local\Temp\msi-admin-renderroulette
+   ZIP: C:\Users\ELMYZ\pc-dist\renderroulette-0.6.0-windows-x64-portable.zip (60578379 B)
+   Installed: C:\Users\ELMYZ\AppData\Local\Programs\RenderRoulette
+4 hit(s)
+   C:\Users\ELMYZ\pc-dist\renderroulette-0.6.0-windows-x64-portable.zip!renderroulette-0.6.0-windows-x64-portable/LICENSE-MIT @37: MIT License\r\n\r\nCopyright (c) 2026 ArtCraft Team and the EffectCraft contributors\r\n
+   C:\Users\ELMYZ\pc-dist\renderroulette-0.6.0-windows-x64-portable.zip!renderroulette-0.6.0-windows-x64-portable/LICENSE-MIT @62: ht (c) 2026 ArtCraft Team and the EffectCraft contributors\r\n\r\nPermission is hereby gr
+   C:\Users\ELMYZ\pc-dist\renderroulette-0.6.0-windows-x64-portable.zip!renderroulette-0.6.0-windows-x64-portable/NOTICE @38: RenderRoulette\r\nCopyright (c) 2026 ArtCraft Team and the EffectCraft contributors.\r
+   C:\Users\ELMYZ\pc-dist\renderroulette-0.6.0-windows-x64-portable.zip!renderroulette-0.6.0-windows-x64-portable/NOTICE @63: ht (c) 2026 ArtCraft Team and the EffectCraft contributors.\r\n\r\nThis is a modified ver
+
+Reviewer note: vendor/reel/LICENSE-MIT keeps its own upstream copyright line (vendored code licence, required). Output hits are only the bundled LICENSE-MIT/NOTICE copyright lines.

@@ -1,0 +1,64 @@
+Remaining pdfcraft / PdfCraft occurrences after DocuMancer rename (2026-10-09)
+
+Text hits (rg -i -c pdfcraft, excluding contributors.json): ~34 across 15 files.
+Plus contributors/contributors.json (generated). All intentional / protected.
+
+Grouped:
+
+1) Upstream GitHub repo / releases / raw URLs (majority)
+   - Cargo.toml workspace.repository
+   - apps/documancer/src/updates.rs (API + tests)
+   - crates/ui-egui/src/updates.rs RELEASES_PAGE
+   - crates/ui-egui/tests/updates.rs, tests/links.rs
+   - README.md clone/release/badge links
+   - docs/localization.md issue/PR links
+   - packaging/windows/sign.ps1 /du
+   - packaging/linux/* homepage/bugtracker/help/raw image
+   Why: real storytold/pdfcraft upstream; renaming would break links.
+
+2) Live website getartcraft.com/apps/pdfcraft
+   - crates/engine/src/links.rs APP_PAGE (APP slug kept "pdfcraft" for URL scheme test)
+   - packaging wxs ARPURL*, nfpm.yaml, metainfo, README
+   Why: live website address used in Help/About/installer.
+
+3) packaging/linux/package.sh default REPO=storytold/pdfcraft
+   Why: builds release download URLs from the real GitHub repo.
+
+4) contributors/contributors.json
+   Why: generated; AGENTS.md forbids hand-edit.
+
+5) ROADMAP.md historical rename note citing storytold/pdfcraft
+   Why: changelog / history.
+
+No unprotected Rust crate names, binaries, settings folders, or user-facing
+"PdfCraft" display strings remain. App id is ai.storyteller.documancer;
+settings %APPDATA%\DocuMancer; portable DocuMancerData.
+
+
+Orchestrator update (2026-10-09 17:45): after licence-text fixes the total is 46 occurrences in 20 files (text) + dmg-layout.DS_Store (binary).
+6) Licence / copyright text restored to upstream (legal text must not be rewritten):
+   - docs/brand/LICENSE-brand.txt (restored verbatim; ArtCraft trademark grant names PdfCraft)
+   - LICENSE-MIT and NOTICE copyright line "ArtCraft Team and the PdfCraft contributors"; NOTICE adds
+     "DocuMancer is a modified version of PdfCraft (https://github.com/storytold/pdfcraft)."
+   - AGENTS.md trademark sentence now says the marks may be used only within the upstream PdfCraft project.
+Per-file counts:
+AGENTS.md:1
+apps\documancer\src\updates.rs:4
+Cargo.toml:1
+contributors\contributors.json:1
+crates\engine\src\links.rs:3
+crates\ui-egui\src\updates.rs:1
+crates\ui-egui\tests\links.rs:2
+crates\ui-egui\tests\updates.rs:2
+docs\brand\LICENSE-brand.txt:6
+docs\localization.md:1
+LICENSE-MIT:1
+NOTICE:2
+packaging\linux\ai.storyteller.documancer.metainfo.xml.in:4
+packaging\linux\nfpm.yaml:1
+packaging\linux\package.sh:1
+packaging\windows\documancer.wxs:2
+packaging\windows\documancer-user.wxs:2
+packaging\windows\sign.ps1:1
+README.md:9
+ROADMAP.md:1

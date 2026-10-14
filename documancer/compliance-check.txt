@@ -1,0 +1,27 @@
+﻿Compliance check: DocuMancer  (2026-10-13 10:39)
+Repo: C:\Users\ELMYZ\OneDrive - Bayer\Documents\AI_temp\PDF_Editor  (git HEAD = upstream commit 7c35809)
+
+1. Source tree scan (tracked + untracked, not ignored; text, binary, UTF-16, file names):
+== PDF_Editor: 2 text lines, 0 binary files, 0 file names
+   LICENSE-MIT:3: Copyright (c) 2026 ArtCraft Team and the PdfCraft contributors
+   NOTICE:2: Copyright (c) 2026 ArtCraft Team and the PdfCraft contributors.
+
+2. Licence files vs upstream commit (git diff HEAD):
+   LICENSE-MIT : present, byte-identical to upstream
+   LICENSE-APACHE : present, byte-identical to upstream
+
+3. Built outputs scan ('craft', ASCII + UTF-16LE, case-insensitive; zip entries scanned decompressed):
+   MSI: C:\Users\ELMYZ\pc-dist\documancer-0.4.0-windows-x64-user.msi (28737536 B); admin-extracted to C:\Users\ELMYZ\AppData\Local\Temp\msi-admin-documancer
+   ZIP: C:\Users\ELMYZ\pc-dist\documancer-0.4.0-windows-x64-portable.zip (37221925 B)
+   Installed: C:\Users\ELMYZ\AppData\Local\Programs\DocuMancer
+8 hit(s)
+   C:\Users\ELMYZ\AppData\Local\Temp\msi-admin-documancer\LocalApp\Programs\DocuMancer\documancer-cli.exe @24705271: (var acceptedcapacitycomputeridentityaircraftemployedproposeddomesticincludesprovided
+   C:\Users\ELMYZ\AppData\Local\Temp\msi-admin-documancer\LocalApp\Programs\DocuMancer\documancer.exe @37883383: (var acceptedcapacitycomputeridentityaircraftemployedproposeddomesticincludesprovided
+   C:\Users\ELMYZ\pc-dist\documancer-0.4.0-windows-x64-portable.zip!documancer-0.4.0-windows-x64-portable/documancer-cli.exe @24705271: (var acceptedcapacitycomputeridentityaircraftemployedproposeddomesticincludesprovided
+   C:\Users\ELMYZ\pc-dist\documancer-0.4.0-windows-x64-portable.zip!documancer-0.4.0-windows-x64-portable/documancer.exe @37883383: (var acceptedcapacitycomputeridentityaircraftemployedproposeddomesticincludesprovided
+   C:\Users\ELMYZ\pc-dist\documancer-0.4.0-windows-x64-portable.zip!documancer-0.4.0-windows-x64-portable/LICENSE-MIT @35: MIT License\n\nCopyright (c) 2026 ArtCraft Team and the PdfCraft contributors\n\nPer
+   C:\Users\ELMYZ\pc-dist\documancer-0.4.0-windows-x64-portable.zip!documancer-0.4.0-windows-x64-portable/LICENSE-MIT @57: right (c) 2026 ArtCraft Team and the PdfCraft contributors\n\nPermission is hereby gran
+   C:\Users\ELMYZ\AppData\Local\Programs\DocuMancer\documancer-cli.exe @24705271: (var acceptedcapacitycomputeridentityaircraftemployedproposeddomesticincludesprovided
+   C:\Users\ELMYZ\AppData\Local\Programs\DocuMancer\documancer.exe @37883383: (var acceptedcapacitycomputeridentityaircraftemployedproposeddomesticincludesprovided
+
+Reviewer note: the 6 exe hits are the English word 'aircraft' inside a third-party built-in word dictionary compiled into the binaries (most likely the Brotli RFC 7932 static dictionary used by a decompression dependency) - not a brand mention. Remaining LICENSE-MIT/NOTICE lines are the legally required upstream copyright notice.

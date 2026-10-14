@@ -1,0 +1,18 @@
+﻿cargo :    Compiling documancer-engine v0.4.0 (C:\Users\ELMYZ\dm-src\crates\engine)
+At C:\Users\ELMYZ\AppData\Local\Temp\ps-script-934c9b41-b05a-4144-af44-3966bd1b9ba4.ps1:121 char:462
++ ... times.txt"; cargo test --release --locked -p documancer-cli --test re ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (   Compiling do...\crates\engine):String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+   Compiling documancer-automation v0.4.0 (C:\Users\ELMYZ\dm-src\crates\automation)
+   Compiling documancer-cli v0.4.0 (C:\Users\ELMYZ\dm-src\apps\documancer-cli)
+    Finished `release` profile [optimized] target(s) in 3m 06s
+     Running tests\render.rs (C:\Users\ELMYZ\pc-target\release\deps\render-9ccb75b16aaa3ac7.exe)
+error: test failed, to rerun pass `-p documancer-cli --test render`
+
+Caused by:
+  could not execute process `C:\Users\ELMYZ\pc-target\release\deps\render-9ccb75b16aaa3ac7.exe` (never executed)
+
+Caused by:
+  Access is denied. (os error 5)

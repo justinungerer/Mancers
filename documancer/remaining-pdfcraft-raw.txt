@@ -1,0 +1,32 @@
+﻿C:\Users\ELMYZ\dm-src\Cargo.toml:12:repository = "https://github.com/storytold/pdfcraft"
+C:\Users\ELMYZ\dm-src\apps\documancer\src\updates.rs:7:const LATEST: &str = "https://api.github.com/repos/storytold/pdfcraft/releases/latest";
+C:\Users\ELMYZ\dm-src\apps\documancer\src\updates.rs:54:        let r = parse(r#"{"tag_name":"v0.2.0","html_url":"https://github.com/storytold/pdfcraft/releases/tag/v0.2.0"}"#).unwrap();
+C:\Users\ELMYZ\dm-src\apps\documancer\src\updates.rs:55:        assert_eq!(r, Release { version: "v0.2.0".into(), url: "https://github.com/storytold/pdfcraft/releases/tag/v0.2.0".into() });
+C:\Users\ELMYZ\dm-src\apps\documancer\src\updates.rs:56:        for elsewhere in ["https://example.com/documancer.exe", "https://github.com/storytold/pdfcraft/releases.evil/x", "javascript:alert(1)"] {
+C:\Users\ELMYZ\dm-src\crates\engine\src\links.rs:11:pub const APP_PAGE: &str = "https://getartcraft.com/apps/pdfcraft";
+C:\Users\ELMYZ\dm-src\crates\engine\src\links.rs:12:pub const GITHUB: &str = "https://github.com/storytold/pdfcraft";
+C:\Users\ELMYZ\dm-src\ROADMAP.md:178:- **2026-10-07 (session 16):** PrintCraft is renamed DocuMancer: repo `storytold/pdfcraft`, crates and binaries `documancer*`, bundle id `ai.storyteller.documancer`. On first launch the app moves the old PrintCraft settings and crash-recovery folders to the new name, so upgrades keep recent files, preferences and unsaved work. No feature change. Γëê 30ΓÇô35%.
+C:\Users\ELMYZ\dm-src\README.md:31:  <a href="https://getartcraft.com/apps/pdfcraft"><b>DocuMancer on getartcraft.com</b></a> ┬╖
+C:\Users\ELMYZ\dm-src\README.md:72:- **Web page:** [getartcraft.com/apps/documancer](https://getartcraft.com/apps/pdfcraft)
+C:\Users\ELMYZ\dm-src\README.md:73:- **Source:** [github.com/storytold/pdfcraft](https://github.com/storytold/pdfcraft)
+C:\Users\ELMYZ\dm-src\README.md:354:git clone https://github.com/storytold/pdfcraft
+C:\Users\ELMYZ\dm-src\README.md:377:Each [GitHub release](https://github.com/storytold/pdfcraft/releases) has ready-made builds for macOS,
+C:\Users\ELMYZ\dm-src\README.md:411:**New to DocuMancer?** Download it from the [DocuMancer page on getartcraft.com](https://getartcraft.com/apps/pdfcraft). That's the easiest way to install it.
+C:\Users\ELMYZ\dm-src\README.md:413:**Want a specific build or format?** On GitHub, the [latest release](https://github.com/storytold/pdfcraft/releases/latest) has every build listed below, and [all releases](https://github.com/storytold/pdfcraft/releases) has earlier versions and their notes. `<ver>` in the file names is the version number, and `SHA256SUMS.txt` lists a checksum for every file.
+C:\Users\ELMYZ\dm-src\README.md:481:| <img src="https://raw.githubusercontent.com/storytold/pdfcraft/main/assets/app-icon/hicolor/64x64/apps/ai.storyteller.pdfcraft.png" alt="" width="32" height="32"> | **DocuMancer** | **Reading, organizing and protecting PDFs ┬╖ you are here** | [GitHub](https://github.com/storytold/pdfcraft) | [Website](https://getartcraft.com/apps/pdfcraft) |
+C:\Users\ELMYZ\dm-src\README.md:506:  <a href="https://getartcraft.com/apps/pdfcraft">DocuMancer</a>
+C:\Users\ELMYZ\dm-src\packaging\windows\sign.ps1:58:$common = @('sign', '/v', '/fd', 'SHA256', '/td', 'SHA256', '/d', 'DocuMancer', '/du', 'https://github.com/storytold/pdfcraft')
+C:\Users\ELMYZ\dm-src\packaging\windows\documancer.wxs:36:    <Property Id="ARPURLINFOABOUT" Value="https://getartcraft.com/apps/pdfcraft" />
+C:\Users\ELMYZ\dm-src\packaging\windows\documancer.wxs:37:    <Property Id="ARPURLUPDATEINFO" Value="https://getartcraft.com/apps/pdfcraft" />
+C:\Users\ELMYZ\dm-src\crates\ui-egui\tests\links.rs:33:        ("DocuMancer web page", "https://getartcraft.com/apps/pdfcraft"),
+C:\Users\ELMYZ\dm-src\crates\ui-egui\tests\links.rs:34:        ("DocuMancer on GitHub", "https://github.com/storytold/pdfcraft"),
+C:\Users\ELMYZ\dm-src\crates\ui-egui\tests\updates.rs:12:    Arc::new(move || answer.clone().map(|v| Release { url: format!("https://github.com/storytold/pdfcraft/releases/tag/{v}"), version: v }))
+C:\Users\ELMYZ\dm-src\crates\ui-egui\tests\updates.rs:88:            Ok(Release { version: "v99.0.0".into(), url: "https://github.com/storytold/pdfcraft/releases/tag/v99.0.0".into() })
+C:\Users\ELMYZ\dm-src\docs\localization.md:21:Simplified Chinese, French and German coverage tests, following PhotoCraft's complete-catalog approach, check every registered command, All tools label and `tl!("literal")` in the UI source. Simplified Chinese also checks direct `i18n::t` calls and multiline literals, plus the About tabs, contributor name modes, sort options, table headers and model columns. Generated history labels, contributor summaries and diagnostics are tested with user-supplied names and error details. Catalog coverage does not guarantee glyph coverage: the release-pinned craft-fonts input currently has no `Hans` face, and the web build embeds only BIZ UDPGothic Regular. Chinese font delivery remains separate work, as discussed in [#112](https://github.com/storytold/pdfcraft/pull/112) and [#140](https://github.com/storytold/pdfcraft/pull/140).
+C:\Users\ELMYZ\dm-src\packaging\linux\package.sh:124:  REPO="${GITHUB_REPOSITORY:-storytold/pdfcraft}"
+C:\Users\ELMYZ\dm-src\packaging\linux\ai.storyteller.documancer.metainfo.xml.in:22:  <url type="homepage">https://getartcraft.com/apps/pdfcraft</url>
+C:\Users\ELMYZ\dm-src\packaging\linux\ai.storyteller.documancer.metainfo.xml.in:23:  <url type="bugtracker">https://github.com/storytold/pdfcraft/issues</url>
+C:\Users\ELMYZ\dm-src\packaging\linux\ai.storyteller.documancer.metainfo.xml.in:24:  <url type="help">https://github.com/storytold/pdfcraft</url>
+C:\Users\ELMYZ\dm-src\packaging\linux\ai.storyteller.documancer.metainfo.xml.in:39:      <image>https://raw.githubusercontent.com/storytold/pdfcraft/main/docs/images/pdfcraft-viewer.png</image>
+C:\Users\ELMYZ\dm-src\packaging\linux\nfpm.yaml:17:homepage: https://getartcraft.com/apps/pdfcraft
+C:\Users\ELMYZ\dm-src\crates\ui-egui\src\updates.rs:15:pub const RELEASES_PAGE: &str = "https://github.com/storytold/pdfcraft/releases";

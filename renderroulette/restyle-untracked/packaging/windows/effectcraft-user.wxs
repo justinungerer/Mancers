@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  EffectCraft per-user MSI (WiX Toolset v5). Built by `package.ps1 -Scope user`:
+
+    wix build effectcraft-user.wxs -arch x64 -d Version=1.2.3 -d BinDir=... -d IconPath=... -o out.msi
+
+  Installs for the current user only, without elevation, into %LOCALAPPDATA%\Programs\EffectCraft,
+  with a Start Menu shortcut and an App Paths entry under HKCU. UpgradeCode differs from the
+  per-machine package. No portable.txt: the installed app keeps its data in the per-user folders.
+-->
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Package
+      Name="EffectCraft"
+      Manufacturer="Learning Machines LLC"
+      Version="$(var.Version)"
+      UpgradeCode="6BAEBE25-C5D9-47B0-9863-E38DF54EB5F2"
+      Scope="perUser"
+      Compressed="yes"
+      Language="1033">
+    <SummaryInformation Description="EffectCraft motion graphics and visual effects (per-user)" Manufacturer="Learning Machines LLC" />
+    <MajorUpgrade AllowSameVersionUpgrades="yes"
+        DowngradeErrorMessage="A newer version of EffectCraft is already installed." />
+    <MediaTemplate EmbedCab="yes" CompressionLevel="high" />
+
+    <Icon Id="EffectcraftIcon.ico" SourceFile="$(var.IconPath)" />
+    <Property Id="ARPPRODUCTICON" Value="EffectcraftIcon.ico" />
+    <Property Id="ARPURLINFOABOUT" Value="https://getartcraft.com/apps/effectcraft" />
+    <Property Id="ARPURLUPDATEINFO" Value="https://getartcraft.com/apps/effectcraft" />
+    <Property Id="ARPHELPLINK" Value="https://discord.gg/artcraft" />
+
+    <StandardDirectory Id="LocalAppDataFolder">
+      <Directory Id="UserPrograms" Name="Programs">
+        <Directory Id="INSTALLFOLDER" Name="EffectCraft" />
+      </Directory>
+    </StandardDirectory>
+    <StandardDirectory Id="ProgramMenuFolder" />
+
+    <Feature Id="Main" Title="EffectCraft" Level="1">
+      <ComponentGroupRef Id="EffectcraftUserFiles" />
+    </Feature>
+  </Package>
+
+  <Fragment>
+    <ComponentGroup Id="EffectcraftUserFiles" Directory="INSTALLFOLDER">
+      <Component Id="EffectcraftApp" Guid="1FA28343-1ED5-4BF7-9FF4-7399698FB03D">
+        <File Id="EffectcraftExe" Source="$(var.BinDir)\effectcraft.exe" />
+        <RegistryValue Root="HKCU" Key="Software\EffectCraft" Name="InstallDir" Value="[INSTALLFOLDER]" Type="string" KeyPath="yes" />
+        <RemoveFolder Id="RemoveUserPrograms" Directory="UserPrograms" On="uninstall" />
+        <RemoveFolder Id="RemoveInstallFolder" Directory="INSTALLFOLDER" On="uninstall" />
+        <RegistryValue Root="HKCU" Key="Software\Microsoft\Windows\CurrentVersion\App Paths\effectcraft.exe" Value="[#EffectcraftExe]" Type="string" />
+      </Component>
+
+      <Component Id="EffectcraftCli" Guid="5DEE2594-7980-495F-BF1D-49DB19359DDC">
+        <File Id="EffectcraftCliExe" Source="$(var.BinDir)\effectcraft-cli.exe" />
+        <RegistryValue Root="HKCU" Key="Software\EffectCraft" Name="Cli" Value="[#EffectcraftCliExe]" Type="string" KeyPath="yes" />
+      </Component>
+
+      <Component Id="EffectcraftShortcut" Directory="ProgramMenuFolder" Guid="72079648-8AA3-4B99-B007-A737DFB11A5E">
+        <Shortcut Id="StartMenuShortcut" Name="EffectCraft" Description="EffectCraft motion graphics and visual effects"
+            Target="[#EffectcraftExe]" WorkingDirectory="INSTALLFOLDER" Icon="EffectcraftIcon.ico" IconIndex="0" />
+        <RegistryValue Root="HKCU" Key="Software\EffectCraft" Name="StartMenuShortcut" Value="1" Type="integer" KeyPath="yes" />
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+</Wix>

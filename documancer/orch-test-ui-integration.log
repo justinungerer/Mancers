@@ -1,0 +1,782 @@
+﻿cargo :    Compiling documancer-engine v0.4.0 (C:\Users\ELMYZ\dm-src\crates\engine)
+At C:\Users\ELMYZ\AppData\Local\Temp\ps-script-934c9b41-b05a-4144-af44-3966bd1b9ba4.ps1:121 char:228
++ ... times.txt"; cargo test --release --locked --no-fail-fast -p documance ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (   Compiling do...\crates\engine):String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+   Compiling documancer-ui-egui v0.4.0 (C:\Users\ELMYZ\dm-src\crates\ui-egui)
+    Finished `release` profile [optimized] target(s) in 94m 48s
+     Running unittests src\lib.rs (C:\Users\ELMYZ\pc-target\release\deps\documancer_ui_egui-6591c1e77a9d0c71.exe)
+
+running 134 tests
+test autoscroll::tests::chromium_curve_is_gentle_near_the_anchor_and_accelerates_farther_away ... ok
+test autoscroll::tests::fractional_motion_covers_the_same_distance_at_different_frame_rates ... ok
+test autoscroll::tests::speed_has_a_dead_zone_is_symmetric_and_rejects_invalid_input ... ok
+test bidi::tests::arabic_words_swap_and_the_extension_stays_last ... ok
+test bidi::tests::direction_controls_are_not_drawn ... ok
+test bidi::tests::hebrew_and_brackets ... ok
+test bidi::tests::latin_and_numbers_keep_their_own_order ... ok
+test bidi::tests::text_without_rtl_is_borrowed_unchanged ... ok
+test canvas::tests::fit_page_and_height_hold_still_while_mixed_page_sizes_scroll_past ... ok
+test canvas::tests::layouts_match_their_commands_and_names ... ok
+test canvas::tests::navigation_drops_partial_wheel_motion ... ok
+test canvas::tests::notches_turn_pages_and_stop_at_the_ends ... ok
+test autoscroll::tests::unsupported_platform_leaves_middle_button_and_escape_input_untouched ... ok
+test canvas::tests::reselecting_the_layout_does_not_scroll_to_top ... ok
+test canvas::tests::wheel_is_single_page_only ... ok
+test comments::tests::drawn_shapes_ignore_slips ... ok
+test comments::tests::proportional_corners_keep_the_opposite_anchor_and_edges_stretch_one_axis ... ok
+test comments::tests::text_boxes_fit_their_text ... ok
+test credits::tests::alphabetical_ignores_at_and_case ... ok
+test credits::tests::delta_and_dates ... ok
+test credits::tests::formatting ... ok
+test credits::tests::names_fall_back_to_the_username ... ok
+test comments::tests::tools_round_trip_through_their_commands ... ok
+test editing::tests::saving_never_creates_a_file_through_a_dangling_link_at_the_staging_name ... ok
+test editing::revert_draft_tests::failed_revert_preserves_focused_and_queued_drafts ... ok
+test editing::tests::saving_never_writes_through_a_symbolic_link_at_the_staging_name ... ok
+test editing::tests::a_failed_save_removes_the_staging_file ... ok
+test folders_ui::tests::folders_from_settings_must_be_absolute_unique_and_few ... ok
+test folders_ui::tests::the_root_keeps_its_separator ... ok
+test folders_ui::tests::a_missing_folder_lists_as_unavailable ... ok
+test i18n::tests::broken_catalog_falls_back_to_english ... ok
+test i18n::tests::brazilian_portuguese_is_registered ... ok
+test bidi::tests::odd_input_never_panics ... ok
+test i18n::tests::bulgarian_covers_commands_and_catalogue ... ok
+test i18n::tests::bulgarian_diagnostics_preserve_user_values ... ok
+test editing::tests::saving_never_writes_through_a_file_planted_at_the_staging_name ... ok
+test i18n::tests::catalog_kinds_are_parsed_and_looked_up ... ok
+test editing::revert_draft_tests::successful_revert_clears_focused_or_queued_drafts_only_on_its_document ... ok
+test editing::tests::a_folder_at_the_staging_name_is_left_alone ... ok
+test i18n::tests::candidates_walk_from_specific_to_general ... ok
+test i18n::tests::bulgarian_is_registered ... ok
+test i18n::tests::contextual_id_and_plural_lookups_have_english_fallbacks ... ok
+test i18n::tests::catalogs_handle_escapes_crlf_and_distinct_contexts ... ok
+test i18n::tests::czech_covers_every_menu_label ... ok
+test i18n::tests::formatting_reorders_parameters_without_reinterpreting_user_text ... ok
+test editing::tests::saving_a_long_name_leaves_only_the_saved_file ... ok
+test i18n::tests::current_language_is_per_thread ... ok
+test i18n::tests::french_covers_commands_and_catalogue ... ok
+test i18n::tests::french_is_registered ... ok
+test i18n::tests::french_history_and_diagnostics_preserve_user_values ... ok
+test i18n::tests::german_history_and_diagnostics_preserve_user_values ... ok
+test i18n::tests::german_covers_commands_and_catalogue ... ok
+test i18n::tests::german_is_registered ... ok
+test i18n::tests::history_labels_keep_captured_names ... ok
+test i18n::tests::japanese_covers_commands_and_catalogue ... ok
+test i18n::tests::japanese_labels_have_glyphs ... ok
+test i18n::tests::language_persists_and_invalid_input_keeps_current_language ... ok
+test i18n::tests::lookups_fall_back_to_english ... ok
+test i18n::tests::contextual_labels_fall_back_to_the_plain_translation ... ok
+test i18n::tests::macos_language_list_is_parsed ... ok
+test i18n::tests::malformed_lines_are_reported_not_fatal ... ok
+test i18n::tests::plurals_and_placeholders ... ok
+test i18n::tests::preferences_resolve_with_fallback ... ok
+test fill_sign::tests::long_signature_previews_have_clear_margins ... ok
+test i18n::tests::russian_history_and_diagnostics_preserve_user_values ... ok
+test i18n::tests::russian_covers_commands_and_catalogue ... ok
+test i18n::tests::russian_is_registered ... ok
+test editing::tests::saving_gives_up_rather_than_reuse_a_taken_name ... ok
+test i18n::tests::simplified_chinese_is_registered ... ok
+test i18n::tests::simplified_chinese_covers_about_credit_labels ... ok
+test i18n::tests::simplified_chinese_history_and_diagnostics_preserve_user_values ... ok
+test i18n::tests::spanish_covers_commands_and_catalogue ... ok
+test i18n::tests::simplified_chinese_covers_commands_and_catalogue ... ok
+test i18n::tests::spanish_is_registered ... ok
+test i18n::tests::strict_validation_skips_only_the_bad_line ... ok
+test i18n::tests::tags_map_to_languages ... ok
+test i18n::tests::telugu_covers_commands_and_catalogue ... ok
+test i18n::tests::telugu_is_registered ... ok
+test i18n::tests::telugu_labels_have_glyphs ... ok
+test i18n::tests::undo_and_redo_labels_use_the_catalog_phrase_when_there_is_one ... ok
+test i18n::tests::windows_display_language_query_returns_a_locale_tag ... ok
+test i18n::tests::windows_display_language_resolves_chinese_scripts ... ok
+test icons::tests::every_catalog_icon_exists ... ok
+test icons::tests::every_command_icon_exists ... ok
+test marks_ui::tests::page_ranges_with_subsets ... ok
+test pageboxes::tests::drafts_pick_pages_and_reset_to_default_at_zero ... ok
+test last_session::tests::malformed_sessions_are_skipped_and_capped ... ok
+test panels::label_column::a_huge_label_is_measured_a_bounded_number_of_times ... ok
+test panels::label_column::multibyte_labels_are_cut_on_char_boundaries ... ok
+test panels::label_column::short_labels_are_not_touched ... ok
+test panels::label_column::long_labels_are_cut_to_their_column_with_an_ellipsis ... ok
+test i18n::tests::traditional_chinese_is_registered ... ok
+test panels::label_column::the_loop_ends_when_nothing_fits ... ok
+test i18n::tests::bundled_catalogs_are_consistent ... ok
+test optimize_ui::tests::a_second_run_is_refused_while_one_is_going ... ok
+test pickers::tests::a_follow_up_that_asks_again_gets_its_picker_even_if_another_request_came_first ... ok
+test pickers::tests::a_panicking_follow_up_is_reported_and_the_next_pick_still_runs ... ok
+test pickers::tests::a_second_picker_is_refused_while_one_is_showing ... ok
+test pickers::tests::the_follow_up_runs_on_a_later_frame_and_not_when_cancelled ... ok
+test pickers::tests::worker_queues_the_pick_and_keeps_the_flag_until_the_frame_uses_it ... ok
+test pickers::tests::a_panicking_worker_clears_showing_and_queues_nothing ... ok
+test portable::tests::no_exe_dir_leaves_portable_mode_off ... ok
+test portable::tests::no_marker_leaves_portable_mode_off ... ok
+test portable::tests::a_marker_folder_is_not_a_marker ... ok
+test protect::tests::drafts_validate_and_map_to_the_right_password ... ok
+test system_fonts::tests::a_face_without_the_probe_is_rejected ... ok
+test sign_ui::tests::a_new_digital_id_is_not_written_through_a_dangling_link ... ok
+test theme::tests::lagoon_accent_text_and_buttons_are_readable ... ok
+test system_fonts::tests::candidates_are_absolute_font_files ... ok
+test portable::tests::unwritable_data_folder_turns_portable_mode_off_and_says_why ... ok
+test theme::tests::lagoon_is_the_default_light_teal_theme ... ok
+test theme::tests::lagoon_preference_id_round_trips ... ok
+test system_fonts::tests::broken_and_missing_files_are_skipped ... ok
+test wheel_pager::tests::a_swipe_turns_one_page_momentum_included ... ok
+test wheel_pager::tests::a_touch_whose_end_was_missed_expires ... ok
+test theme::tests::text_is_readable_on_every_surface ... ok
+test portable::tests::an_existing_data_folder_is_reused ... ok
+test wheel_pager::tests::each_new_swipe_turns_again_even_during_momentum ... ok
+test wheel_pager::tests::every_notch_turns_one_page_however_fast ... ok
+test wheel_pager::tests::fractional_lines_are_touchpad_motion_off_macos ... ok
+test wheel_pager::tests::hostile_input_never_turns_more_than_once ... ok
+test wheel_pager::tests::nothing_turns_while_it_cannot_and_that_motion_does_not_count_later ... ok
+test wheel_pager::tests::phase_less_streams_turn_once_per_burst ... ok
+test wheel_pager::tests::reversing_mid_gesture_turns_back_but_jitter_does_not ... ok
+test zoom_snap::tests::ink_bounds_finds_the_marked_area ... ok
+test i18n::tests::bulgarian_covers_ui_literals ... ok
+test portable::tests::either_marker_keeps_the_data_beside_the_exe ... ok
+test widgets::tests::toast_width_adapts_to_long_notices_and_narrow_viewports ... ok
+test sign_ui::tests::a_new_digital_id_skips_names_already_taken_without_writing_through_them ... ok
+test optimize_ui::tests::the_progress_card_shows_the_stage_and_cancels ... ok
+test i18n::tests::french_covers_ui_literals ... ok
+test i18n::tests::german_covers_ui_literals ... ok
+test i18n::tests::russian_covers_ui_literals ... ok
+test i18n::tests::simplified_chinese_covers_ui_literals ... ok
+
+test result: ok. 134 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.17s
+
+     Running tests\accessibility.rs (C:\Users\ELMYZ\pc-target\release\deps\accessibility-0f78008a9c397ca4.exe)
+
+running 2 tests
+test setting_alternate_text_figure_by_figure ... ok
+test checking_fixing_skipping_and_reporting ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.13s
+
+     Running tests\actions.rs (C:\Users\ELMYZ\pc-target\release\deps\actions-8e7fcc9b9ed209f4.exe)
+
+running 1 test
+test run_and_create_actions ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.08s
+
+     Running tests\bookmarks.rs (C:\Users\ELMYZ\pc-target\release\deps\bookmarks-c87dd2c8d116d5bc.exe)
+
+running 6 tests
+test number_pages_dialog_labels_the_selected_pages ... ok
+test escape_cancels_a_rename ... ok
+test expanding_and_collapsing_all_bookmarks ... ok
+test bookmark_search_is_per_document ... ok
+test search_finds_collapsed_bookmarks_and_keeps_original_paths ... ok
+test new_rename_reorder_indent_delete_and_undo ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.66s
+
+     Running tests\buttons.rs (C:\Users\ELMYZ\pc-target\release\deps\buttons-8f715894f6e334a2.exe)
+
+running 2 tests
+test hide_actions_hide_and_show_fields ... ok
+test buttons_reset_navigate_and_print ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\commands.rs (C:\Users\ELMYZ\pc-target\release\deps\commands-d7af145c971d3517.exe)
+
+running 10 tests
+test disabled_commands_explain_themselves ... ok
+test full_screen_toggles_by_shortcut_and_command_and_escape_leaves ... ok
+test the_open_recent_menu_is_disabled_while_the_list_is_empty ... ok
+test the_shortcuts_dialog_lists_the_real_bindings ... ok
+test the_pages_menu_comes_from_the_registry ... ok
+test the_palette_lists_commands_with_shortcuts_and_runs_them ... ok
+test shortcuts_run_registered_commands ... ok
+test the_about_dialog_shows_the_running_version ... ok
+test the_open_recent_menu_lists_files_and_opens_one ... ok
+test every_registered_command_is_implemented ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.07s
+
+     Running tests\comments.rs (C:\Users\ELMYZ\pc-target\release\deps\comments-9f774f51d3d2d946.exe)
+
+running 21 tests
+test hovering_a_comment_shows_its_author_and_text ... ok
+test dragging_over_text_with_the_highlighter_highlights_it ... ok
+test a_selection_made_first_is_marked_when_a_tool_is_picked ... ok
+test sticky_note_composer_posts_and_returns_to_select ... ok
+test replacing_text_strikes_it_and_adds_a_caret ... ok
+test a_new_highlight_opens_its_note_for_typing ... ok
+test a_closed_comments_panel_stays_closed_when_picking_comment_tools ... ok
+test attaching_a_file_as_a_comment ... ok
+test comment_properties_change_appearance_and_author ... ok
+test comments_are_selected_moved_and_deleted_with_the_select_tool ... ok
+test erasing_part_of_a_drawing ... ok
+test shapes_and_ink_are_drawn_by_dragging ... ok
+test highlighting_an_area_off_the_text ... ok
+test make_current_properties_default ... ok
+test the_opacity_set_for_a_tool_goes_into_its_new_comments ... ok
+test the_squiggly_tool_marks_selected_text ... ok
+test polygons_clouds_connected_lines_callouts_and_inserted_text ... ok
+test the_panel_posts_comments_and_replies ... ok
+test the_panel_filters_and_sorts ... ok
+test the_panel_filters_by_colour_and_checkmark ... ok
+test comments_take_checkmarks_lock_hide_and_summarize ... ok
+
+test result: ok. 21 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.30s
+
+     Running tests\compare.rs (C:\Users\ELMYZ\pc-target\release\deps\compare-bd96eab86186a0bd.exe)
+
+running 4 tests
+test compare_panel_screenshot ... ok
+test export_to_word_html_and_rtf ... ok
+test pdfa_dialog_verifies_and_converts ... ok
+test compare_two_versions ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.08s
+
+     Running tests\content.rs (C:\Users\ELMYZ\pc-target\release\deps\content-c172bd07a3cdc8eb.exe)
+
+running 2 tests
+test clicking_elsewhere_keeps_the_text_and_starts_a_new_box ... ok
+test typing_moving_styling_and_deleting_added_content ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.11s
+
+     Running tests\control.rs (C:\Users\ELMYZ\pc-target\release\deps\control-1dd4f375f73b4f21.exe)
+
+running 21 tests
+test cover_page_command_needs_two_page_view ... ok
+test select_all_key_selects_every_page_in_organize ... ok
+test inspect_and_click_by_label_and_id ... ok
+test control_default_workspace_and_session_override ... ok
+test bookmark_titles_can_be_searched_over_control ... ok
+test commands_keys_and_typing ... ok
+test saved_signature_can_be_changed_through_the_control_channel ... ok
+test drawing_a_comment_by_drag_and_its_context_menu ... ok
+test japanese_controls_and_search_keep_command_ids ... ok
+test japanese_dialogs_errors_and_custom_action_names ... ok
+test middle_button_input_does_not_start_custom_scrolling_outside_linux ... ok
+test state_reports_the_selected_pages ... ok
+test simplified_chinese_signature_prompts_and_errors_keep_document_state ... ok
+test preferences_menu_and_shortcut_allow_switching_interface_languages ... ok
+test state_and_view_options ... ok
+test language_switch_preserves_document_and_command_ids ... ok
+test simplified_chinese_about_tabs_and_credit_controls ... ok
+test theme_commands_and_options_report_preference_and_effective_colours ... ok
+test loopback_transport_requires_the_token ... ok
+test measurement_tools_draw_live_calibrate_save_and_export ... ok
+test screenshots_of_window_and_region ... ok
+
+test result: ok. 21 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.13s
+
+     Running tests\create.rs (C:\Users\ELMYZ\pc-target\release\deps\create-37d8198d94e8b3f0.exe)
+
+running 7 tests
+test multiple_files_that_cannot_be_converted_open_nothing ... ok
+test clipboard_images_and_text_become_new_pdfs ... ok
+test opening_images_and_text_converts_them_to_new_pdfs ... ok
+test image_import_dialog_chooses_dpi_and_cancels ... ok
+test multiple_files_open_as_one_document_in_the_page_grid ... ok
+test reduce_file_size_writes_a_compact_copy ... ok
+test the_pdf_optimizer_dialog_saves_an_optimized_copy ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.12s
+
+     Running tests\document_links.rs (C:\Users\ELMYZ\pc-target\release\deps\document_links-06119dd112de5beb.exe)
+
+running 11 tests
+test a_button_script_cannot_open_a_local_program ... ok
+test a_button_uri_action_asks_first ... ok
+test a_link_asks_first_and_opens_when_allowed ... ok
+test a_lookalike_host_is_shown_in_punycode_and_flagged ... ok
+test a_numeric_host_is_shown_as_the_address_it_goes_to ... ok
+test a_script_asks_first_and_only_once ... ok
+test a_script_cannot_open_other_kinds_of_address ... ok
+test an_email_link_cannot_attach_a_local_file ... ok
+test an_international_host_is_shown_in_punycode_and_marked ... ok
+test cancel_opens_nothing ... ok
+test escape_cancels ... ok
+
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.39s
+
+     Running tests\editing.rs (C:\Users\ELMYZ\pc-target\release\deps\editing-f87a1eb1d879adf5.exe)
+
+running 68 tests
+test an_rc4_file_unlocks_with_its_owner_password_too ... ok
+test alt_arrows_move_the_selected_file ... ok
+test a_bad_range_stops_combine_until_fixed ... ok
+test closing_the_combine_tab_forgets_its_list ... ok
+test columns_resize_and_the_layout_is_kept_in_the_settings ... ok
+test column_headings_sort_the_list_and_flip_on_the_second_click ... ok
+test cancelling_properties_discards_the_draft ... ok
+test clean_tabs_close_without_asking ... ok
+test clicking_existing_text_selects_its_source_font_style ... ok
+test combine_files_opens_in_its_own_tab ... ok
+test a_quick_flick_on_either_edge_rewraps_the_paragraph ... ok
+test closing_a_dirty_tab_asks_and_cancel_keeps_it ... ok
+test delete_is_refused_when_it_would_remove_every_page ... ok
+test closing_a_dirty_tab_can_save_first ... ok
+test combine_files_takes_chosen_pages_in_the_order_listed ... ok
+test command_click_toggles_and_rotation_applies_to_selection ... ok
+test a_folder_adds_its_pdfs_in_order_and_optionally_its_subfolders ... ok
+test copying_cutting_and_pasting_pages ... ok
+test document_properties_edit_is_one_undoable_step ... ok
+test combining_files_opens_a_new_unsaved_tab ... ok
+test ctrl_and_shift_clicks_select_several_files_that_move_and_go_together ... ok
+test dragging_thumbnails_reorders_pages ... ok
+test a_password_protected_file_is_unlocked_with_its_password_and_combined ... ok
+test insert_blank_page_after_selection ... ok
+test files_dropped_before_the_pointer_is_known_wait_for_it ... ok
+test dragging_a_paragraph_moves_it_and_its_edge_rewraps_it ... ok
+test a_file_that_opens_but_forbids_combining_takes_the_permissions_password ... ok
+test edit_menu_names_the_step_to_undo ... ok
+test combine_lists_size_and_warns_before_combining ... ok
+test editing_a_double_drawn_line_replaces_every_copy ... ok
+test extract_button_copies_selected_pages_to_a_new_tab ... ok
+test editing_existing_images_on_the_page ... ok
+test files_dropped_outside_the_page_grid_still_open_as_documents ... ok
+test extract_options_and_rotate_pages_dialog ... ok
+test editing_existing_text_in_place ... ok
+test inserting_a_file_goes_after_the_selection_and_undoes ... ok
+test files_dropped_between_pages_are_inserted_there ... ok
+test organize_select_all_applies_operations_to_every_page ... ok
+test open_documents_can_be_added_to_combine ... ok
+test organize_select_all_shortcut_preserves_current_page_and_sets_range_anchor ... ok
+test organize_select_all_leaves_focused_text_input_and_dialogs_alone ... ok
+test organize_delete_then_undo_and_redo_with_keys ... ok
+test pages_panel_command_click_picks_pages_without_moving_the_document ... ok
+test pages_panel_escape_clears_and_deleted_pages_leave_the_selection ... ok
+test pages_panel_shift_click_picks_a_range_and_a_plain_click_starts_over ... ok
+test save_pages_writes_what_the_grid_shows ... ok
+test quitting_with_unsaved_changes_still_remembers_every_file ... ok
+test print_shortcut_offers_the_pages_picked_in_the_pages_panel ... ok
+test quitting_with_unsaved_changes_asks_for_each_document ... ok
+test organize_select_all_works_without_page_editing_permission ... ok
+test replace_pages_dialog_swaps_page_content ... ok
+test save_prompt_stays_inside_the_screen_for_a_long_filename ... ok
+test protected_files_that_can_be_combined_are_flagged ... ok
+test password_prompt_opens_and_security_tab_reports_the_details ... ok
+test plus_between_pages_inserts_picked_files_there_in_order ... ok
+test save_writes_an_incremental_update_and_clears_dirty ... ok
+test shift_click_selects_a_range_and_moves_it ... ok
+test restricted_documents_show_a_notice_and_block_page_changes ... ok
+test one_password_unlocks_several_selected_files_and_undo_locks_them_again ... ok
+test split_before_selected_pages ... ok
+test save_prompt_fits_the_smallest_window_whatever_the_name ... ok
+test the_last_session_is_off_by_default_and_skips_missing_and_duplicate_files ... ok
+test the_whole_heading_sorts_and_dragging_it_moves_the_column ... ok
+test split_dialog_writes_one_file_per_part ... ok
+test the_format_panel_restyles_the_paragraph_being_edited ... ok
+test undo_and_redo_restore_the_combine_list ... ok
+test the_last_session_reopens_its_files_pages_and_active_tab ... ok
+test the_save_prompt_answers_to_the_keyboard ... ok
+
+test result: ok. 68 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.16s
+
+     Running tests\export.rs (C:\Users\ELMYZ\pc-target\release\deps\export-f3ac5895ddb87262.exe)
+
+running 1 test
+test export_dialogs_write_images_and_text ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.11s
+
+     Running tests\fill_sign.rs (C:\Users\ELMYZ\pc-target\release\deps\fill_sign-99b39192ccb8ff89.exe)
+
+running 14 tests
+test changing_drawn_signatures_can_be_cancelled_or_switched_to_type ... ok
+test signing_draws_a_signature_once_and_places_it ... ok
+test text_marks_and_date ... ok
+test image_import_cancel_clear_and_errors_preserve_saved_signatures ... ok
+test saved_signature_cards_remove_and_add_without_changing_the_document ... ok
+test typed_signatures_and_initials ... ok
+test changing_saved_signatures_and_initials_preserves_placed_marks ... ok
+test long_typed_names_fit_the_placed_signature_and_keep_every_outline ... ok
+test embedded_image_signature_live_gestures_follow_document_and_view_rotation ... ok
+test image_signature_corners_restore_original_aspect_after_edge_resize_and_reopen ... ok
+test image_signature_live_resize_and_move_preserve_background_and_hide_moving_handles ... ok
+test image_signature_placement_selects_resize_handles_and_requires_reselecting_to_repeat ... ok
+test image_signature_preview_follows_pointer_at_page_size_with_zoom_and_rotation ... ok
+test image_signatures_and_initials_can_be_imported_placed_and_remembered ... ok
+
+test result: ok. 14 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.87s
+
+     Running tests\folders.rs (C:\Users\ELMYZ\pc-target\release\deps\folders-1ce618c307e64715.exe)
+
+running 9 tests
+test pinning_is_limited_and_never_duplicates ... ok
+test pinned_folders_survive_a_restart ... ok
+test unpinning_removes_the_folder_but_not_its_files ... ok
+test new_scans_appear_without_reopening_home ... ok
+test a_long_pdf_name_is_cut_before_its_date_and_size ... ok
+test an_unavailable_folder_says_so_and_stays_pinned ... ok
+test a_pinned_folder_lists_its_newest_pdfs_on_home ... ok
+test clicking_a_pinned_pdf_opens_it_and_adds_it_to_recent ... ok
+test show_more_reveals_the_older_pdfs ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.10s
+
+     Running tests\fonts.rs (C:\Users\ELMYZ\pc-target\release\deps\fonts-d317a11e764fe583.exe)
+
+running 7 tests
+test arabic_ui_text_uses_craft_fonts ... ok
+test chinese_ui_text_prefers_the_chinese_face ... ok
+test japanese_ui_text_uses_craft_fonts ... ok
+test telugu_ui_text_uses_craft_fonts ... ok
+test system_fallback_fills_missing_scripts ... ok
+test ui_fonts_work_without_craft_fonts ... ok
+test primary_ui_fonts_cover_latin_and_cyrillic_catalogs ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running tests\forms.rs (C:\Users\ELMYZ\pc-target\release\deps\forms-dc795f64386a77ef.exe)
+
+running 16 tests
+test closing_while_still_typing_in_a_field_asks_to_save ... ok
+test typing_into_a_text_field_and_tabbing_on ... ok
+test an_unrelated_command_leaves_the_field_being_typed_in_alone ... ok
+test date_fields_offer_a_calendar ... ok
+test flattening_while_typing_flattens_the_typed_text ... ok
+test tabbing_into_a_filled_field_selects_it_so_typing_replaces ... ok
+test check_boxes_radios_and_choices ... ok
+test a_save_shortcut_pressed_while_typing_saves_only_the_document_it_was_pressed_in ... ok
+test a_rejected_value_keeps_the_typing_and_stops_the_save ... ok
+test exporting_form_data_while_typing_includes_the_text ... ok
+test close_all_saves_text_typed_in_a_tab_that_is_no_longer_active ... ok
+test saving_while_still_typing_in_a_field_saves_the_text ... ok
+test escape_and_save_in_the_same_frame_discards_the_draft ... ok
+test a_value_refused_on_enter_keeps_save_in_the_same_frame_from_running ... ok
+test typing_and_saving_in_the_same_frame_saves_the_last_keystrokes ... ok
+test revert_tests::reverting_rejected_input_saves_the_original_field_and_appearance ... ok
+
+test result: ok. 16 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.22s
+
+     Running tests\identity.rs (C:\Users\ELMYZ\pc-target\release\deps\identity-ef586dd4a6ab70dc.exe)
+
+running 1 test
+test the_identity_name_signs_new_comments_and_is_remembered ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\javascript.rs (C:\Users\ELMYZ\pc-target\release\deps\javascript-a59377de04351477.exe)
+
+running 5 tests
+test merge_data_files_into_a_spreadsheet ... ok
+test button_scripts_run_and_alert ... ok
+test prepare_a_form_detects_fields_on_a_paper_form ... ok
+test document_scripts_and_preferences ... ok
+test console_runs_scripts_against_the_document ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.08s
+
+     Running tests\layer_actions.rs (C:\Users\ELMYZ\pc-target\release\deps\layer_actions-5f31de331e42376c.exe)
+
+running 2 tests
+test push_buttons_set_layer_visibility ... ok
+test links_set_layer_visibility ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\links.rs (C:\Users\ELMYZ\pc-target\release\deps\links-33b3a72063dea0a3.exe)
+
+running 5 tests
+test discord_button_in_the_top_bar_opens_discord ... ok
+test about_dialog_shows_the_brand_and_links ... ok
+test about_dialog_has_contributors_and_models_tabs ... ok
+test help_commands_open_each_link ... ok
+test home_screen_links ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.13s
+
+     Running tests\marks.rs (C:\Users\ELMYZ\pc-target\release\deps\marks-b6fad94a6de2a121.exe)
+
+running 3 tests
+test backgrounds_and_watermarks_from_a_file ... ok
+test watermark_and_background_dialogs ... ok
+test header_and_footer_dialog_inserts_tokens_and_applies_to_a_subset ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.08s
+
+     Running tests\ocr.rs (C:\Users\ELMYZ\pc-target\release\deps\ocr-6ae99c491260eaf3.exe)
+
+running 2 tests
+test recognize_text_in_multiple_files_writes_searchable_copies ... ok
+test recognize_text_dialog_adds_searchable_text ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.10s
+
+     Running tests\pageboxes.rs (C:\Users\ELMYZ\pc-target\release\deps\pageboxes-24e9fad4c2744dec.exe)
+
+running 3 tests
+test duplicate_pages_copies_the_current_page ... ok
+test the_crop_tool_crops_to_the_dragged_rectangle_then_returns_to_select ... ok
+test set_page_boxes_dialog_applies_margins_to_the_chosen_pages ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.12s
+
+     Running tests\pdf_links.rs (C:\Users\ELMYZ\pc-target\release\deps\pdf_links-dcfa07fab0a01bb7.exe)
+
+running 1 test
+test drawing_editing_and_deleting_links ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\perf.rs (C:\Users\ELMYZ\pc-target\release\deps\perf-43d26df154baf04d.exe)
+
+running 2 tests
+test panels_with_hundreds_of_items_stay_within_the_frame_budget ... ok
+test scrolling_a_500_page_document_stays_within_the_frame_budget ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 9.06s
+
+     Running tests\pickers.rs (C:\Users\ELMYZ\pc-target\release\deps\pickers-42bc168d6cc6ca2f.exe)
+
+running 20 tests
+test a_pick_for_a_document_that_is_no_longer_active_is_dropped ... ok
+test a_failed_startup_url_is_reported_in_the_app ... ok
+test a_browser_insert_goes_into_the_document_it_was_started_on ... ok
+test a_cancelled_folder_pick_extracts_and_deletes_nothing ... ok
+test a_browser_insert_into_a_document_edited_meanwhile_is_refused ... ok
+test an_image_pick_for_a_document_that_is_no_longer_active_changes_nothing ... ok
+test an_image_pick_is_dropped_if_the_document_was_edited_meanwhile ... ok
+test a_browser_insert_that_arrives_after_switching_documents_changes_neither ... ok
+test file_open_returns_at_once_and_opens_the_pick_on_the_next_frame ... ok
+test a_cancelled_save_on_close_keeps_the_tab_open ... ok
+test export_comments_writes_on_a_later_frame ... ok
+test extracted_pages_are_not_deleted_if_the_document_was_edited_while_choosing_the_folder ... ok
+test a_watermark_file_from_browse_lands_only_in_the_dialog_that_asked ... ok
+test a_close_prompt_still_means_its_own_document_after_a_pending_save_closes_another_tab ... ok
+test extract_and_delete_deletes_the_pages_only_after_their_files_are_written ... ok
+test close_all_saves_each_untitled_document_in_turn ... ok
+test insert_from_file_uses_the_pick_on_the_next_frame ... ok
+test save_as_writes_on_a_later_frame_including_edits_made_meanwhile ... ok
+test save_on_close_closes_the_tab_only_once_the_file_is_written ... ok
+test replace_pages_applies_only_to_the_document_its_dialog_was_opened_on ... ok
+
+test result: ok. 20 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.28s
+
+     Running tests\prepare.rs (C:\Users\ELMYZ\pc-target\release\deps\prepare-45badcf5cd60eeeb.exe)
+
+running 12 tests
+test options_tab_sets_the_check_box_style ... ok
+test options_tab_sets_flags_alignment_and_defaults ... ok
+test image_fields_take_a_picture_when_clicked ... ok
+test format_validate_and_calculate_tabs ... ok
+test appearance_tab_restyles_the_field ... ok
+test duplicating_a_field_onto_every_page ... ok
+test the_fields_panel_orders_tabs_manually ... ok
+test actions_tab_adds_and_removes_actions ... ok
+test preview_fills_the_form_and_locked_fields_keep_their_properties ... ok
+test deleting_several_selected_fields_and_detecting_fields_from_the_panel ... ok
+test aligning_distributing_and_sizing_several_fields ... ok
+test placing_moving_editing_and_deleting_a_field ... ok
+
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.22s
+
+     Running tests\print.rs (C:\Users\ELMYZ\pc-target\release\deps\print-00c149e1cc636248.exe)
+
+running 5 tests
+test invalid_ranges_are_explained_in_the_preview ... ok
+test a_failed_save_as_pdf_keeps_the_dialog_open ... ok
+test print_dialog_lays_out_sheets_and_saves_a_pdf ... ok
+test print_dialog_prints_the_selected_pages ... ok
+test cut_stack_dialog_previews_saves_and_refuses_duplex ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.11s
+
+     Running tests\protect.rs (C:\Users\ELMYZ\pc-target\release\deps\protect-72d7847e6cc7d233.exe)
+
+running 2 tests
+test editing_restrictions_via_advanced_options ... ok
+test protecting_for_viewing_requires_matching_passwords_and_saves_encrypted ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.19s
+
+     Running tests\recovery.rs (C:\Users\ELMYZ\pc-target\release\deps\recovery-af13c24eef5e9869.exe)
+
+running 7 tests
+test incomplete_entries_are_ignored_and_cleaned_up ... ok
+test saving_or_closing_clears_the_entry_and_nothing_is_written_for_clean_documents ... ok
+test discarding_removes_the_autosaves ... ok
+test quitting_cleanly_leaves_nothing_behind ... ok
+test control_click_effects_are_visible_when_the_reply_arrives ... ok
+test a_crashed_session_is_offered_and_recovered_unsaved ... ok
+test encrypted_documents_are_autosaved_encrypted_and_recovered_with_the_password ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.30s
+
+     Running tests\redact.rs (C:\Users\ELMYZ\pc-target\release\deps\redact-af2aa71473913d49.exe)
+
+running 2 tests
+test removing_hidden_information_and_sanitizing ... ok
+test marking_applying_and_clearing ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.08s
+
+     Running tests\signing.rs (C:\Users\ELMYZ\pc-target\release\deps\signing-49cc04f8ed0b054d.exe)
+
+running 5 tests
+test os_store_identities_are_not_persisted ... ok
+test certifying_without_a_visible_signature ... ok
+test clicking_an_empty_signature_field_signs_it ... ok
+test drawing_a_signature_creating_an_id_signing_and_trusting ... ok
+test windows_store_identity_does_not_ask_for_a_file_password ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.16s
+
+     Running tests\stamps.rs (C:\Users\ELMYZ\pc-target\release\deps\stamps-fd57a20d3ec62dbe.exe)
+
+running 3 tests
+test creating_placing_and_keeping_custom_stamps ... ok
+test natural_image_stamps_keep_displayed_bounds_on_rotated_pages ... ok
+test choosing_and_placing_stamps ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.39s
+
+     Running tests\text_select.rs (C:\Users\ELMYZ\pc-target\release\deps\text_select-0301a2050c19bf6f.exe)
+
+running 2 tests
+test quick_clicks_with_the_highlighter_mark_only_the_word ... ok
+test quick_clicks_select_a_word_then_the_line_then_the_page ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests\theme.rs (C:\Users\ELMYZ\pc-target\release\deps\theme-6dfc8d188a184778.exe)
+
+running 4 tests
+test commands_and_options_apply_before_the_first_frame ... FAILED
+test saved_preferences_restore_with_legacy_light_dark_settings ... ok
+test lagoon_menu_entry_is_selectable ... ok
+test toolbar_and_view_menu_share_theme_preferences ... ok
+
+failures:
+
+---- commands_and_options_apply_before_the_first_frame stdout ----
+
+thread 'commands_and_options_apply_before_the_first_frame' (41456) panicked at crates\ui-egui\tests\theme.rs:133:5:
+assertion `left == right` failed
+  left: Light
+ right: Dark
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    commands_and_options_apply_before_the_first_frame
+
+test result: FAILED. 3 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.11s
+
+error: test failed, to rerun pass `-p documancer-ui-egui --test theme`
+     Running tests\ui.rs (C:\Users\ELMYZ\pc-target\release\deps\ui-13e7c45e23519010.exe)
+
+running 28 tests
+test explicit_mode_preserves_independent_tool_and_panel_options ... ok
+test garbage_input_is_rejected_without_panicking ... ok
+test drag_selects_text_and_copy_returns_it ... ok
+test find_reports_no_matches ... ok
+test home_shows_welcome_and_tools ... ok
+test find_counts_matches_across_pages ... ok
+test every_catalog_tool_is_listed_after_view_more ... ok
+test a_tab_with_an_arabic_file_name_keeps_its_logical_accessible_name ... ok
+test dropping_a_pdf_on_the_window_opens_it ... ok
+test default_workspace_mode_persists_and_tolerates_invalid_settings ... ok
+test a_folder_dropped_on_the_combine_tab_adds_its_pdfs ... ok
+test explicit_mode_overrides_default_before_and_after_open ... ok
+test files_and_quit_from_the_operating_system ... ok
+test long_recent_names_and_paths_are_cut_before_the_page_count ... ok
+test persistence_round_trips_and_tolerates_garbage ... ok
+test cancelling_then_discarding_an_earlier_dirty_tab_preserves_the_selected_document ... ok
+test opening_a_pdf_keeps_a_closed_left_panel_and_the_chosen_tool ... ok
+test newly_opened_pdfs_use_the_default_workspace ... ok
+test closing_the_last_active_tab_selects_the_previous_one_then_home ... ok
+test opening_a_pdf_shows_comments_and_bookmarks ... ok
+test zoom_keeps_the_point_under_the_cursor_still ... ok
+test theme_and_view_options_apply ... ok
+test pdfs_dropped_on_the_combine_tab_join_its_list ... ok
+test preferences_selects_default_workspace_for_next_open ... ok
+test selection_works_in_every_view_rotation ... ok
+test closing_tabs_keeps_the_selected_document_or_selects_its_neighbor ... ok
+test overflowing_tabs_can_be_reached_by_scrolling ... ok
+test narrow_tab_strips_accept_vertical_wheel_scrolling ... ok
+
+test result: ok. 28 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.52s
+
+     Running tests\updates.rs (C:\Users\ELMYZ\pc-target\release\deps\updates-5142f83d51026ea6.exe)
+
+running 4 tests
+test versions_compare_by_number ... ok
+test a_newer_release_is_offered_for_download ... ok
+test nothing_is_asked_until_the_user_checks ... ok
+test an_up_to_date_or_failed_check_says_so ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\view.rs (C:\Users\ELMYZ\pc-target\release\deps\view-f51cf994957950d4.exe)
+
+running 27 tests
+test layout_option_rejects_typos ... ok
+test fit_page_holds_zoom_across_mixed_page_sizes ... ok
+test palette_runs_page_display_commands_from_the_keyboard ... ok
+test default_page_display_is_used_for_new_documents ... ok
+test continuous_layout_stacks_pages_vertically ... ok
+test page_display_commands_switch_layouts ... ok
+test clicking_a_link_goes_to_its_destination ... ok
+test fonts_tab_lists_fonts_and_embedding ... ok
+test field_list_jumps_to_a_fields_page ... ok
+test rail_page_display_button_switches_layouts ... ok
+test field_highlighting_is_remembered ... ok
+test default_zoom_is_used_for_new_documents ... ok
+test actual_size_fit_width_and_fit_page ... ok
+test view_options_without_a_document ... ok
+test preferences_set_the_default_zoom ... ok
+test two_up_layout_places_pages_side_by_side ... ok
+test single_page_fit_page_fits_the_shown_page ... ok
+test single_page_layout_shows_one_page_at_a_time ... ok
+test single_page_wheel_pans_instead_when_zoomed_in ... ok
+test the_hand_tool_pans_by_dragging ... ok
+test rail_page_display_menu_offers_acrobats_view_choices ... ok
+test view_menu_page_display_uses_the_same_commands ... ok
+test wheel_turns_one_page_per_notch_and_per_trackpad_swipe ... ok
+test highlight_fields_tints_the_field_area ... ok
+test page_raster_maps_one_to_one_onto_screen_pixels ... ok
+test required_fields_get_a_red_border_when_highlighting ... ok
+test required_radio_buttons_get_a_round_red_border ... ok
+
+test result: ok. 27 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.47s
+
+     Running tests\viewer.rs (C:\Users\ELMYZ\pc-target\release\deps\viewer-ed522a9fe7e2ec65.exe)
+
+running 17 tests
+test damaged_files_say_they_were_repaired ... ok
+test fit_visible_zooms_to_the_content_width ... ok
+test each_document_keeps_its_own_scroll_position ... ok
+test optimizer_audits_space_usage ... ok
+test marquee_zoom_and_snapshot ... ok
+test revert_after_confirming ... ok
+test an_earlier_revision_opens_from_document_properties ... ok
+test initial_view_is_edited_and_honoured_on_open ... ok
+test tab_and_window_show_the_document_title_when_asked ... ok
+test advanced_search_lists_results_with_context ... ok
+test layouts_fit_height_labels_and_system_theme ... ok
+test close_all_asks_only_for_changed_documents ... ok
+test v_h_and_space_pick_the_quick_tools ... ok
+test two_page_view_steps_a_spread_at_a_time ... ok
+test view_history_select_all_and_find_options ... ok
+test arrow_and_page_keys_move_through_a_scrolling_document ... ok
+test page_down_steps_every_spread_when_several_fit_on_screen ... ok
+
+test result: ok. 17 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.32s
+
+     Running tests\xfa.rs (C:\Users\ELMYZ\pc-target\release\deps\xfa-7e48a3a3ed7d8a34.exe)
+
+running 6 tests
+test a_dynamic_xfa_form_is_laid_out_and_filled ... ok
+test messages_from_scripts_run_on_open_show_right_away ... ok
+test ordinary_forms_and_documents_have_no_xfa_notice ... ok
+test a_dynamic_xfa_form_says_its_page_is_a_placeholder ... ok
+test a_static_xfa_form_is_filled_from_its_data_and_says_so ... ok
+test xfa_buttons_run_their_scripts_in_the_app ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.10s
+
+error: 1 target failed:
+    `-p documancer-ui-egui --test theme`

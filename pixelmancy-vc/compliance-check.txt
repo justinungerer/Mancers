@@ -1,0 +1,21 @@
+﻿Compliance check: Pixelmancy VC  (2026-10-13 11:05)
+Repo: C:\Users\ELMYZ\OneDrive - Bayer\Documents\AI_temp\PhotoEditor  (git HEAD = upstream commit dd41598d)
+
+1. Source tree scan (tracked + untracked, not ignored; text, binary, UTF-16, file names):
+== PhotoEditor: 2 text lines, 0 binary files, 0 file names
+   LICENSE-MIT:3: Copyright (c) 2026 ArtCraft Team and the PhotoCraft contributors
+   NOTICE:2: Copyright (c) 2026 ArtCraft Team and the PhotoCraft contributors.
+
+2. Licence files vs upstream commit (git diff HEAD):
+   LICENSE-MIT : present, byte-identical to upstream
+   LICENSE-APACHE : present, byte-identical to upstream
+
+3. Built outputs scan ('craft', ASCII + UTF-16LE, case-insensitive; zip entries scanned decompressed):
+   MSI: C:\Users\ELMYZ\pc-dist\pixelmancy-vc-0.5.0-windows-x64-user.msi (32649216 B); admin-extracted to C:\Users\ELMYZ\AppData\Local\Temp\msi-admin-pixelmancy-vc
+   ZIP: C:\Users\ELMYZ\pc-dist\pixelmancy-vc-0.5.0-windows-x64-portable.zip (40971817 B)
+   Installed: C:\Users\ELMYZ\AppData\Local\Programs\Pixelmancy VC
+2 hit(s)
+   C:\Users\ELMYZ\pc-dist\pixelmancy-vc-0.5.0-windows-x64-portable.zip!pixelmancy-vc-0.5.0-windows-x64-portable/LICENSE-MIT @37: MIT License\r\n\r\nCopyright (c) 2026 ArtCraft Team and the PhotoCraft contributors\r\n\r
+   C:\Users\ELMYZ\pc-dist\pixelmancy-vc-0.5.0-windows-x64-portable.zip!pixelmancy-vc-0.5.0-windows-x64-portable/LICENSE-MIT @61: ght (c) 2026 ArtCraft Team and the PhotoCraft contributors\r\n\r\nPermission is hereby gr
+
+Reviewer note: output hits are only the bundled LICENSE-MIT copyright line (legally required).
